@@ -157,7 +157,53 @@ background-color:#d0d0d0;
         .menu{
           display: block !important;
         }
-        
+        .zdjecia1 {
+          width:400px;
+          height:400px;
+        }
+        .zdjecia2 {
+          width:400px;
+          height:400px;
+        }
+        .zdjecia3 {
+          width:400px;
+          height:400px;
+        }
+        .zdjecia4 {
+          width:400px;
+          height:400px;
+        }
+        .zdjecia5 {
+          width:400px;
+          height:400px;
+        }
+        .zdjecia6 {
+          width:400px;
+          height:400px;
+        }
+        .navbar-toggler {
+          display: inline-block;
+        }
+        .menu{
+          /* display: none; */
+          /* position:absolute; */
+          background: rgba(0,0,0,0.8);
+          width: 100%;
+          text-align: center;
+        }
+        .menu li{
+          float:none;
+        }
+        .menu li ul {
+          position:relative;
+        }
+      }
+      .menu1  {
+            text-align: right;
+            justify-content: right;
+            position:absolute;
+            right:10%;
+      }
       }
       
       @media screen and (max-width: 700px) {
