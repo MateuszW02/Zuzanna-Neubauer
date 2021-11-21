@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap&subset=latin-ext');
+body    {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    display:flex;
+    flex-wrap: wrap;
+}
+.header  {
+    
+    background-color: #052d73;
+    height:100px;
+    
+    color:white;
+    padding:5px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    order:1;
+
+    flex-basis:100%;
+}
+
+.what    {
+    background-color:#f5f5f5;
+    color:#052d73;
+    flex-basis:40%;
+    height:500px;
+    text-align: center;
+
+}
+
+.we   {
+    background-color:#f5f5f5;
+    color:#052d73;
+    flex-basis:40%;
+    height:500px;
+    text-align:center;
+
+}
+.whatwe{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content: center;
+    align-items:center;
+    margin-top: 2em;
+    order:2;
+    flex-basis:100%;
+}
+.sdg {
+    height: 200px;
+    text-align:center;
+    padding:15px;
+
+    display: flex;
+    flex-basis:100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    order:3;
+}
+.sdg > p    {
+margin:0;
+width:auto;
+}
+
+.sdg > p::first-letter {
+    -webkit-initial-letter:4;
+    font-size:5em;
+    line-height: 60px;
+    font-weight: bold;
+  color:#1a80b6;
+}
+.aot   {
+    background-color:#f5f5f5;
+    color:#052d73;
+    flex-basis:40%;
+    height:500px;
+    text-align: center;
+
+}
+.experts    {
+    background-color:#f5f5f5;
+    color:#052d73;
+    flex-basis:40%;
+    height:500px;
+    text-align:center;
+
+}
+.aotexp{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    clear:both;
+    order:4;
+    flex-basis:100%;
+}
+.stopka  {
+    padding:10px;
+    background-color: #052d73;
+    height:150px;
+    text-align: center;
+    color:white;
+    clear: both;
+    order:5;
+    flex-basis:100%;
+}
+p   {
+    margin-left:auto;
+    margin-right: auto;
+    width: 10em;
+    color:#777982;
+}
+
+a{
+    text-decoration: none;
+    color:#052d73;
+}
+.stopka a {
+    color:#c1c1c1;
+
+}
+
+.menu{
+    padding: 0px;
+    margin:0px;
+    position:relative;
+  }
+  .menu li{
+    float:left;
+    list-style:none;
+  }
+  .menu li a{
+    padding: 20px 15px;
+    display: inline-block;
+    text-decoration:none;
+    position:relative;
+    z-index: 1;
+    color: #ff5252;
+    text-transform:uppercase;
+  }
+  .menu li a::before{
+    content:" ";
+      position: absolute;
+      background:#ccc;
+      width: 0;
+      height: 2px;
+      left: 0;
+      bottom: 0;
+    transition-duration:1s;
+  }
+  .menu li:hover > a::before{
+    width:100%;
+  }
+  .menu li:hover a{
+      background: #333;
+      color: #fff;
+  }
+  .menu li ul{
+     margin: 0;
+     padding: 0;
+     position: absolute;
+     z-index: 100;
+    display:none;
+  }
+  .menu li:hover ul{
+    display:block;
+  }
+  .menu li ul li{
+    display:block;
+    width: 100%;
+  }
+  .menu li ul li a{
+    width: 100%;
+  }
+  /* navbar-toggler */
+  
+  .navbar-toggler {
+      display: none;
+      cursor: pointer;
+      margin-left: 10px;
+  }
+  
+  .navbar-toggler .bar1, .navbar-toggler .bar2, .navbar-toggler .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: #333;
+      margin: 6px 0;
+      transition: 0.4s;
+  }
+  
+  .change .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+      transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+      transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+  @media screen and (min-width: 700px) {
+    .menu{
+      display: block !important;
+    }
+    
+  }
+  
+  @media screen and (max-width: 700px) {
+    .navbar-toggler {
+      display: inline-block;
+    }
+    .menu{
+      display: none;
+      position:absolute;
+      background: rgba(0,0,0,0.8);
+      width: 100%;
+      text-align: center;
+    }
+    .menu li{
+      float:none;
+    }
+    .menu li ul {
+      position:relative;
+    }
+  }
+  .menu1  {
+        text-align: right;
+        justify-content: right;
+        position:absolute;
+        right:10%;
+  }
+   
